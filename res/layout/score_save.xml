@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    > 
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+    <TableRow
+    	android:background="@color/gray"
+    	>
+        <TextView
+            android:layout_column="1"
+            android:text="Tipo de troféu"
+            android:padding="3dip"
+            android:textColor="@color/white" 
+            />            
+        <TextView
+            android:text="Posição"
+            android:gravity="right"
+            android:padding="3dip" 
+            android:textColor="@color/white"
+		/>            
+    </TableRow>    
+    <TableRow
+    	android:id="@+id/TopTenRow"
+    	android:visibility="gone"
+    	>
+        <TextView
+            android:layout_column="1"
+            android:text="Melhor pontuação"
+            android:padding="3dip" />
+        <TextView
+        	android:id="@+id/TopTenPos"
+            android:text=""
+            android:gravity="right"
+            android:padding="3dip" 
+            android:textColor="@color/white"
+		/>            
+    </TableRow>
+</TableLayout>
+	<TextView
+		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	    android:text="Nome:"
+	    android:padding="3dip" 
+	/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    > 	
+    <EditText
+        android:id="@+id/score_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="textCapWords"        
+        />     
+        <Button
+          android:id="@+id/ScoreSaveButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Gravar"
+          android:layout_weight="0"
+          android:enabled="false"
+          android:onClick="ScoreSaveButton_OnClick"
+          />
+</LinearLayout>           
+</LinearLayout>        

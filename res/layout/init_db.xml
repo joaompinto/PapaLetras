@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent" 	           
+      android:gravity="center"
+      android:background="@color/background"
+      >
+	  <TextView
+	  android:text="Criando a lista de palavras.\nAguarde alguns segundos..."
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:textSize="15dp"
+	  android:background="@color/blue"
+	  android:textColor="#ffffff"
+	  android:gravity="center"
+	  android:padding="10dp"
+	  />      
+</LinearLayout>

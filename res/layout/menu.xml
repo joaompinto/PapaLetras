@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent"
+                android:orientation="vertical"    
+                android:background="@color/background"            
+                >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/menu_layout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:layout_centerInParent="true"                          
+	>	               	
+	  <ImageView 
+	   android:src="@drawable/bluehsoft_logo"
+	   android:layout_width="fill_parent"
+	   android:layout_height="wrap_content"
+	   android:gravity="center"
+   	  />
+	  <TextView
+	   android:id="@+id/link"
+	   android:layout_width="fill_parent"
+	   android:layout_height="wrap_content"
+	   android:gravity="center"
+	   android:textColor="@color/blueback"  	  
+	   android:text="Blue Hippo Software"
+	   android:layout_margin="1dp"
+	  />
+	  <TextView
+	   android:id="@+id/link"
+	   android:layout_width="fill_parent"
+	   android:layout_height="wrap_content"
+	   android:gravity="center"
+	   android:textColor="@color/white"  	  
+	   android:text="Brevemente estará disponível a versão PRO\nque permite mais tempo de jogo..."
+	   android:textSize="15dp"
+	   android:layout_margin="10dp"
+	  />  	    
+	  <Button xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:text="Iniciar jogo"  
+		  android:id="@+id/start_game"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"  
+		  android:textSize="20dp"  
+		  android:gravity="center" 
+		  android:onClick="startGameOnClick" 
+		  android:layout_margin="2dp"
+		/>
+	  <Button xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:text="Melhores resultados"  
+		  android:id="@+id/high_scores"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"  
+		  android:textSize="20dp"  
+		  android:gravity="center" 
+		  android:onClick="HighScores_OnClick"		  
+  		/>            	           		 
+	  <Button xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:text="Como se joga?"  
+		  android:id="@+id/how_to_play"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"  
+		  android:textSize="20dp"  
+		  android:gravity="center" 
+		  android:onClick="how_to_playOnClick"
+		  android:layout_marginBottom="10dp"		  
+  	/>            	           
+</LinearLayout>                 
+</RelativeLayout>
